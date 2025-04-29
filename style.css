@@ -1,18 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oleo+Script:wght@400;700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+body {
   background-color: #e0e8f6;
+  overflow-x: hidden;
 }
 header {
+  position: fixed;
   width: 100%;
-  height: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin: 50px;
-  padding: 0 20px;
+  padding: 0 50px 20px;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+}
+header .name {
+  padding-left: 20px;
 }
 span {
   font-size: 32px;
@@ -144,26 +153,133 @@ button {
   color: #1c1e53;
   font-size: 18px;
 }
-.project-content,
+.skill-content,
 .contact-content {
   text-align: center;
   width: 100%;
   height: auto;
   padding: 15px 30px;
 }
-.project-content h2,
+.skill-content h2,
 .contact-content h2 {
   color: #484e53;
   font-size: 40px;
   margin-bottom: 0;
 }
-.project-content span,
+.skill-content span,
 .contact-content span {
   font-size: 20px;
   background: linear-gradient(to right, #4fc3f7, #484e53);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.services {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px 50px 10px;
+  gap: 50px;
+}
+.services .service1 {
+  background: #bce7fa;
+  width: 200px;
+  border-radius: 7px;
+  padding: 30px 40px;
+  text-align: left;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+.services .service1 button,
+.services .service2 button,
+.services .service3 button {
+  background-color: #fff;
+  padding: 10px 15px;
+  border: none;
+  background: #94d9f7;
+}
+.services .service1 .span,
+.services .service2 .span,
+.services .service3 .span {
+  color: #484e53;
+  font-weight: 700;
+  font-size: 20px;
+}
+.services .service1 p,
+.services .service2 p,
+.services .service3 p {
+  color: #1c1e53;
+  font-size: 18px;
+}
+.services .service2 {
+  background: #bce7fa;
+  width: 200px;
+  height: 54vh;
+  border-radius: 7px;
+  padding: 30px 40px;
+  text-align: left;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+.services .service3 {
+  background: #bce7fa;
+  width: 200px;
+  height: 54vh;
+  border-radius: 7px;
+  padding: 30px 40px;
+  text-align: left;
+  box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+}
+#projects {
+  text-align: center;
+  padding: 20px;
+}
+.project-section h2 {
+  color: #484e53;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.project-section span {
+  font-size: 20px;
+  background: linear-gradient(to right, #4fc3f7, #484e53);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.project-btn {
+  margin-top: 30px;
+}
+.project-btn button {
+  margin-left: 50px;
+  padding: 10px 5%;
+  border-radius: 150px;
+}
+.project-btn button.active-btn {
+  color: #fff;
+  background-color: #484e53;
+}
+.project-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 70px auto 0;
+  gap: 100px;
+}
+.project-content .project1,
+.project-content .project2,
+.project-content .project3 {
+  text-align: left;
+  font-size: 20px;
+}
+.project-content .project1 button,
+.project-content .project2 button,
+.project-content .project3 button {
+  padding: 10px;
+  border-radius: 150px;
+}
+.project-content .project1 img,
+.project-content .project2 img,
+.project-content .project3 img {
+  width: 130%;
+  height: 180px;
+}
+
 #contact-form {
   display: flex;
   max-width: 500px;
@@ -212,4 +328,43 @@ textarea {
   color: #fff;
   background-color: #484e53;
   width: 90%;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 70px;
+}
+.footer-content h3 {
+  font-size: 50px;
+  margin: 10px;
+}
+.footer-content .email-btn {
+  color: #484e53;
+  outline: none;
+  border-radius: 5px;
+  padding: 10px;
+}
+.email-btn button {
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.email-btn button img {
+  width: 15px;
+  height: 10px;
+  padding-right: 10px;
+}
+.footer-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+  margin: 10px 50px;
+}
+.social-links ul li a i {
+  border: 1px solid #484e53;
+  border-radius: 50%;
+  padding: 3px;
 }
