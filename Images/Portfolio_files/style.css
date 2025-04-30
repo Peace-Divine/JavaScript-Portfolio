@@ -588,7 +588,6 @@ textarea {
 @media only screen and (max-width: 600px) {
   .hero-content {
     margin-bottom: 50px;
-    transition: 0.2s;
   }
   .main-btn button {
     padding: 10px;
@@ -596,43 +595,4 @@ textarea {
   }
 }
 @media screen and (max-width: 500px) {
-  #hero {
-    padding: 0;
-  }
-  .abt-content {
-    padding: 0;
-    line-height: 1;
-  }
-  .abt-content p {
-    margin-top: 20px;
-    font-size: 10px;
-  }
-  .abt-content button {
-    padding: 0;
-    font-size: 0;
-  }
-  .services {
-    margin: 40px;
-  }
-  .services .service1,
-  .services .service2,
-  .services .service3 {
-    padding: 20px 30px;
-  }
-  .services .service1 p,
-  .services .service2 p,
-  .services .service3 p {
-    font-size: 10px;
-  }
-  #projects {
-    margin-top: 0;
-  }
-  .project-btn button {
-    margin-left: 20px;
-  }
-  .project-content .project1 p,
-  .project-content .project2 p,
-  .project-content .project3 p {
-    font-size: 15px;
-  }
 }

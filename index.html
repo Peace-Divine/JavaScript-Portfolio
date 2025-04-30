@@ -13,16 +13,32 @@
   <body>
     <header>
       <span class="name">Divine-Peace</span>
-      <ul>
+      <ul class="navbar">
         <li><a href="#hero" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skill">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button>Schedule Meeting</button>
-      <button class="icon-btn"><i class="bx bxs-moon"></i></button>
+      <button class="scheduleBtnMain"><a href="https://calendly.com/chideradp123/30min" target="_blank">Schedule Meeting</a></button>
+      <button class="icon-btn">
+        <i class='bx bx-sun'></i>
+        <i class="bx bxs-moon"></i>
+      </button>
+      <div class="menu-btn active-btn">
+        <img src="Images/icon-menu.svg" alt="icon-menu" class="menu-icon">
+      </div>
     </header>
+    <div class="mobile-menu active-menu">
+      <ul class="mobile-links">
+        <li><a href="#hero" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="scheduleBtn">Schedule Meeting</button>
+    </div>
     <section id="hero">
       <div class="hero-content">
         <div class="home-img">
@@ -36,7 +52,8 @@
           </p>
           <div class="main-btn">
             <button>Download CV</button>
-            <button>Hire Me</button>
+            <button>
+              <a href="https://wa.me/+2348115351364">Hire Me</a></i></button>
           </div>
         </div>
       </div>
@@ -50,7 +67,9 @@
             Hi there! I'm Divine-Peace, a frontend web developer from Nigeria. Passionate
             about leveraging the power of AI to craft modern and user-friendly, delivering cutting edge solutions in my community and Africa at large. Currently, i am refining my skills where i specialize in creating responsive web applications and this experience is helping me expand my expertise in frontend web development. <br><br> With a problem-solving mindset, i approach challenges as a means to grow, create and innovate. 
           </p>
-          <button>Download Resume</button>
+          <button>
+            <a href="Resume (1).pdf" download="Resume" class="download-btn">Download Resume</a>
+            <i class='bx bxs-download'></i></button>
         </div>
        </div>
     </section>
@@ -62,20 +81,21 @@
           <div class="service1">
             <button><i class="bx bxs-sun"></i></button>
             <p class="span">Frontend Development</p>
-            <p>I build high-performance web applications for individuals and companies with a friendly and user experience interface for customers/users satisfaction using modern technologies</p>
-            <h4>Frontend: <p>HTML,CSS, JavaScript</p> </h4>
+            <p>Crafting high-performance web applications for individuals and companies with a friendly and user experience interface for customers/users satisfaction using modern web technologies</p>
+             <p><span>Technologies:</span> HTML,CSS, JavaScript</p>
+
           </div>
           <div class="service2">
             <button><i class="bx bxs-sun"></i></button>
             <p class="span">Tech Education</p>
-          <p></p>
-          <h4>Technologies: <p>HTML, CSS & JavaScript</p> </h4>
+          <p>Passionate about nurturing the next generation of tech innovators, I teach coding and robotics to kids, fostering their creativity and problem-solving skills. </p>
+          <p><span>Technologies:</span> HTML,CSS, JavaScript</p>
         </div>
         <div class="service3">
           <button><i class="bx bxs-sun"></i></button>
           <p class="span">AI Solutions</p>
-          <p>Developing intelligent AI-powered solutions for automation.</p>
-          <h4>Frontend: <p>JavaScript</p> </h4>
+          <p>Developing intelligent and automated solutions powered by Artificial Intelligence. I leverage my JavaScript skills to build the frontend interfaces for these innovative applications.</p>
+          <p><span>Technologies:</span>JavaScript</p>
         </div>
         </div>
       </div>
@@ -94,17 +114,17 @@
       <div class="project-content">
         <div class="project1">
          <img src="Images/kira-laktionov-_crVEAi7JPA-unsplash.jpg" alt="project-image">
-         <h3>Project Name</h3>
-         <p>description and tech used</p>
-         <button><a href="#"></a>Live Repo</button>
-         <button><a href="#"></a>GitHub Repo</button>
+         <h3>QR Code Generator</h3>
+         <p>Generate scannable QR codes instantly! Simply input your text or URL, and this tool, built with JavaScript, creates a unique QR code for easy sharing and access.</p>
+         <button><a href="https://peace-divine.github.io/QR-Code-generator/">Live Repo</a></button>
+         <button><a href="https://github.com/Peace-Divine/QR-Code-generator">Github Repo</a></button>
         </div>
         <div class="project2">
          <img src="Images/kira-laktionov-_crVEAi7JPA-unsplash.jpg" alt="project-image">
-         <h3>Project Name</h3>
-         <p>description and tech used</p>
-         <button><a href="#"></a>Live Repo</button>
-         <button><a href="#"></a>GitHub Repo</button>
+         <h3>Countdown Timer</h3>
+         <p>Built with JavaScript, this upcoming product launch awareness page features a dynamic countdown timer to generate excitement and anticipation.</p>
+         <button><a href="https://peace-divine.github.io/Countdown-Timer/">Live Repo</a></button>
+         <button><a href="https://github.com/Peace-Divine/Countdown-Timer">GitHub Repo</a></button>
         </div>
         <div class="project3">
           <img src="Images/kira-laktionov-_crVEAi7JPA-unsplash.jpg" alt="project-image">
@@ -143,19 +163,24 @@
       <div class="footer-content">
         <h3>Let's <br>Work Together -</h3>
         <div class="email-btn"> 
-          <button><img src="Images/download-removebg-preview.png" alt="gmail-logo">chideradp123@gmail.com</button></div>
+          <button>
+            <a href="mailto:chideradp123@gmail.com" class="emailLink"> 
+            <img src="Images/download-removebg-preview.png" alt="gmail-logo">chideradp123@gmail.com</a>
+          </button>
+        </div>
       </div>
       <hr>
       <div class="footer-bottom">&copy; 2025 all rights reserved.
       <div class="social-links">
         <ul>
-          <li><a href="https://www.linkedin.com/in/divine-peace-ehuchie-94928b23a/"><i class='bx bxl-linkedin'></i></a></li>
-          <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
-          <li><a href="https://x.com/divinepeace300?t=CawL-bUP8U2cJJO49yFfTA&s=09"><i class='bx bxl-twitter'></i></a></li>
-          <li><a href="https://github.com/Peace-Divine"><i class='bx bxl-github'></i></a></li>
+          <li><a href="https://www.linkedin.com/in/divine-peace-ehuchie-94928b23a/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100083030082022" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+          <li><a href="https://x.com/divinepeace300?t=CawL-bUP8U2cJJO49yFfTA&s=09" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+          <li><a href="https://github.com/Peace-Divine"><i class='bx bxl-github' target="_blank"></i></a></li>
         </ul>
         </div>
       </div>
     </footer>
+    <script src="file.js"></script>
   </body>
 </html>
